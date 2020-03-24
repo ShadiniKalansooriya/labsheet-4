@@ -26,7 +26,8 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"/>
 
     <EditText
         android:id="@+id/editTextTelephone"
@@ -34,7 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="phone" />
+        android:hint="@string/Telephone"
+        android:inputType="phone"
+        android:textSize="24sp"/>
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -42,7 +45,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"/>
 
     <EditText
         android:id="@+id/editTextReType"
@@ -50,7 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:hint="@string/RetypePassword"
+        android:inputType="textPassword"
+        android:textSize="24sp"/>
 
     <Button
         android:id="@+id/buttonRegister"
@@ -68,5 +75,5 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="70dp"
-        android:text="@string/Cancel" />
+        android:text="Button" />
 </LinearLayout>

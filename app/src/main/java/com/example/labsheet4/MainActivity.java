@@ -17,7 +17,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String CHANNEL_ID = String.valueOf(0);
+    private static final String CHANNEL_ID = "CHANNEL";
     Button buttonSignup;
 
     @Override
@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 signup();
+
             }
         });
 
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editTextName);
         String name = editText.getText().toString();
 
-        Intent intent = new Intent(this, Notification.class);
+        Intent intent = new Intent(this, registration.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
@@ -62,10 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true);
+
+        builder.setContentIntent(pendingIntent);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
         notificationManager.notify(0, builder.build());
 
         Intent intent1 = new Intent(MainActivity.this, registration.class);
-        startActivity(intent1);
+
+
+       startActivity(intent1);
+
+
     }
 }
