@@ -2,4 +2,11 @@
     <string name="app_name">Labsheet4</string>
     <string name="Name">Name</string>
     <string name="SignUp">SIGN UP</string>
+    <string name="Email">Email</string>
+    <string name="Telephone">Telephone</string>
+    <string name="Password">Password</string>
+    <string name="RetypePassword">Re-type Password</string>
+    <string name="Register">REGISTER</string>
+    <string name="Cancel">CANCEL</string>
+
 </resources>
