@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Labsheet4</string>
     <string name="Name">Name</string>
+    <string name="channel_name">"channel 1 "</string>
+    <string name="channel_description">first channel</string>
+
+
     <string name="SignUp">SIGN UP</string>
     <string name="Email">Email</string>
     <string name="Telephone">Telephone</string>
