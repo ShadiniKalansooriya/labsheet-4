@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editTextName);
         String name = editText.getText().toString();
 
-        Intent intent = new Intent(this, registration.class);
+        Intent intent = new Intent(this, Notification.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 
